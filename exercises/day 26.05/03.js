@@ -6,9 +6,9 @@ let overtime;
 let salaryDiscount;
 let newSalary;
 
-salary = parseFloat( read.question("\nDigite o salário bruto: "));
+salary = parseFloat(read.question("\nDigite o salário bruto: "));
 nightShift = parseFloat(read.question("\nDigite o adicional noturno: "));
-overtime = parseFloat( read.question("\nDigite as horas extras: "));
+overtime = parseFloat(read.question("\nDigite as horas extras: "));
 salaryDiscount = parseFloat(read.question("\nDigite os descontos: "));
 
 newSalary = (salary + nightShift + (overtime*5) - salaryDiscount).toFixed(2);
