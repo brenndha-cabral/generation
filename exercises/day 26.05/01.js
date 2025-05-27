@@ -4,7 +4,7 @@ let salary;
 let bonus;
 let newSalary;
 
-salary = parseFloat( read.question("\nDigite o salário: "));
+salary = parseFloat(read.question("\nDigite o salário: "));
 bonus = parseFloat(read.question("\nDigite o bônus: "));
 
 newSalary = (salary + bonus).toFixed(2);
