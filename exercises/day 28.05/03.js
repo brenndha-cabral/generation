@@ -1,6 +1,6 @@
 const read = require("readline-sync");
 
-let age = 0, youngAge = 0, oldAge = 0;
+let age, youngAge = 0, oldAge = 0;
 
 while (true) {
   age = read.questionInt("Digite uma idade: ");

@@ -1,13 +1,10 @@
 const read = require("readline-sync");
+const data = [2,5,1,3,4,9,7,8,10,6];
 
-let data = [2,5,1,3,4,9,7,8,10,6];
-
-let inputNumber, number, positionNumber;
+let inputNumber, positionNumber;
 
 inputNumber = read.questionInt("Digite o número que você deseja encontrar: ");
-
-number = data.find(number => number === inputNumber);
-positionNumber = data.indexOf(number);
+positionNumber = data.indexOf(data.find(number => number === inputNumber));
 
 if (positionNumber >= 0) {
   console.log(`O número ${inputNumber} está localizado na posição ${positionNumber}`);
