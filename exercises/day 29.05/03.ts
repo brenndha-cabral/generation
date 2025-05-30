@@ -1,6 +1,6 @@
 import read from 'readline-sync';
 
-const data: Set<number> = new Set<number>();
+const data:Set<number> = new Set<number>();
 let inputNumber:number;
 
 for (let i = 1; i <= 10; i++) {
