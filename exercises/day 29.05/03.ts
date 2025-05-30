@@ -1,11 +1,11 @@
-const read3 = require("readline-sync");
-let mySet: Set<number> = new Set<number>();
+import read from 'readline-sync';
 
-let inputNumberInt:number;
+const data: Set<number> = new Set<number>();
+let inputNumber:number;
 
 for (let i = 1; i <= 10; i++) {
-  inputNumberInt = read3.question(`Digite o ${i}º número de 10: `);
-  mySet.add(inputNumberInt);
+  inputNumber = read.questionInt(`Digite o ${i}º número de 10: `);
+  data.add(inputNumber);
 }
 
-console.log(`Listar dados do Set: ${[...mySet].sort((a, b) => a - b)}`);
+console.log(`Listar dados do Set: ${[...data].sort((a, b) => a - b)}`);
