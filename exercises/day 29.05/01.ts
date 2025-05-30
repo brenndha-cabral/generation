@@ -1,6 +1,6 @@
 import read from 'readline-sync';
 
-const data: Array<string> = new Array<string>();
+const data:Array<string> = new Array<string>();
 let inputColor:string;
 
 for (let i = 1; i <= 5; i++) {
